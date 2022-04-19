@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "sarindasatwso2com": {
+      "type": "object",
+      "properties": {
+        "codetest2": {
+          "type": "object",
+          "properties": {
+            "hubspotToken": {
+              "type": "string",
+              "description": ""
+            },
+            "asgardeoOAuthConfig": {
+              "type": "object",
+              "properties": {
+                "tokenUrl": {
+                  "type": "string"
+                },
+                "clientId": {
+                  "type": "string"
+                },
+                "clientSecret": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "tokenUrl",
+                "clientId",
+                "clientSecret"
+              ],
+              "description": ""
+            },
+            "salesforceOAuthConfig": {
+              "type": "object",
+              "properties": {
+                "refreshUrl": {
+                  "type": "string"
+                },
+                "refreshToken": {
+                  "type": "string"
+                },
+                "clientId": {
+                  "type": "string"
+                },
+                "clientSecret": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "refreshUrl",
+                "refreshToken",
+                "clientId",
+                "clientSecret"
+              ],
+              "description": ""
+            },
+            "salesforceBaseUrl": {
+              "type": "string",
+              "description": ""
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "hubspotToken",
+            "asgardeoOAuthConfig",
+            "salesforceOAuthConfig",
+            "salesforceBaseUrl"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
